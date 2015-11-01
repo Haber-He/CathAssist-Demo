@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/responsive-nav.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,8 +20,15 @@
 
     <style type="text/css">
 
+
+      a {
+        color: #606060;
+        outline: 0;
+        text-decoration: none;
+      }
+
       .carousel img {
-        max-height: 500px;
+        max-height: 400px;
         min-height: 200px;
         min-width: 100%;
       }
@@ -35,12 +43,58 @@
         border-bottom: 1px solid rgb(209, 209, 209);
       }
 
-      .list-unstyled li span{
+      .navbar-default .navbar-nav>li>a:focus, 
+      .navbar-default .navbar-nav>li>a:hover,
+      .navbar-default .navbar-nav>.open>a, 
+      .navbar-default .navbar-nav>.open>a:focus, 
+      .navbar-default .navbar-nav>.open>a:hover,
+      .navbar-default .navbar-nav>.active>a, 
+      .navbar-default .navbar-nav>.active>a:focus, 
+      .navbar-default .navbar-nav>.active>a:hover {
+        color: #FFF;
+        background: #46a546;
+      }
+
+      .dropdown-menu>li>a:focus, 
+      .dropdown-menu>li>a:hover,
+      .dropdown-menu>.active>a, 
+      .dropdown-menu>.active>a:focus, 
+      .dropdown-menu>.active>a:hover {
+        color: #FFF;
+        background: #46a546;
+      }
+
+      .panel h3 {
+          padding: 0 14px;
+          height: 34px;
+          line-height: 34px;
+          font-size: 16px;
+          border-top: 2px solid #46a546;
+          border-left: 1px solid #e8e8e8;
+          border-right: 1px solid #e8e8e8;
+          color: #333;
+          background: #f2f2f2;
+          margin: 0 auto;
+      }
+
+      .panel ul {
+          margin: 0 auto;
+          padding: 14px 14px;
+          border: 1px solid #e8e8e8;
+          background: #FFF;
+      }
+
+      .panel ul li{
+          padding: 5px 0;
+          overflow: hidden;
+      }
+
+      .panel li span{
         float:right; 
         color: #999;
       }
 
-      .panel-title span{
+      .panel h3 span{
         float:right;
       }
 
@@ -160,20 +214,16 @@
         <div class="row">
 
           <div class="col-xs-12 col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">
+            <div class="panel">
+                <h3>
                   <a href="">普世教会</a>
                   <span>
-                    <a href=""><small>更多</small></a>
+                    <a href="">更多</a>
                   </span>
                 </h3>
-
-              </div>
-              <div class="panel-body">
-                <ul class="list-unstyled">
+                <ul>
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
+                    <a href="/data">教宗推文2015年10月27日</a>
                     <span class="hidden-xs">2015-10-27</span>
                   </li>
                   <li>
@@ -193,79 +243,74 @@
                     <span class="hidden-xs">2015-10-27</span>
                   </li>
                 </ul>
-
-              </div>
             </div> 
           </div>
     
-
           <div class="col-xs-12 col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">
+            <div class="panel">
+                <h3>
                   <a href="">信仰生活</a>
                   <span>
-                    <a href=""><small>更多</small></a>
+                    <a href="">更多</a>
                   </span>
                 </h3>
-              </div>
-              <div class="panel-body">
-
-                <ul class="list-unstyled">
+                <ul>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                 </ul>
-
-              </div>
             </div> 
           </div>  
 
           <div class="col-xs-12 col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">
+            <div class="panel">
+                <h3>
                   <a href="">主内分享</a>
                   <span>
-                    <a href=""><small>更多</small></a>
+                    <a href="">更多</a>
                   </span>
                 </h3>
-              </div>
-              <div class="panel-body">
-
-                <ul class="list-unstyled">
+                <ul>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                   <li>
                     <a href="#">教宗推文2015年10月27日</a>
+                    <span class="hidden-xs">2015-10-27</span>
                   </li>
                 </ul>
-
-              </div>
             </div> 
-          </div>
+          </div> 
 
           <div class="clear"></div>
         </div>
@@ -273,108 +318,6 @@
 
     </section>
 
-    <section>
-      <div class="container">
-        <div class="row">
-
-          <div class="col-xs-12 col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">
-                  <a href="">圣人传记</a>
-                  <span>
-                    <a href=""><small>更多</small></a>
-                  </span>
-                </h3>
-              </div>
-              <div class="panel-body">
-
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                </ul>
-
-              </div>
-            </div> 
-          </div>
-    
-
-          <div class="col-xs-12 col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">信仰生活</h3>
-              </div>
-              <div class="panel-body">
-
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                </ul>
-
-              </div>
-            </div> 
-          </div>  
-
-          <div class="col-xs-12 col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">主内分享</h3>
-              </div>
-              <div class="panel-body">
-
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                  <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                  </li>
-                </ul>
-
-              </div>
-            </div> 
-          </div>
-
-          <div class="clear"></div>
-        </div>
-      </div>
-
-    </section>
 
     <section>
 
