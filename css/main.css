@@ -1,6 +1,7 @@
 
 body{
   font: "Microsoft Yahei",Arial,Verdana,Tahoma,Sans-Serif;
+  padding-top: 50px;
 }
 
 a {
@@ -176,4 +177,19 @@ a {
   list-style: none;
   float: left;
   margin: 0 5px;
+}
+
+.breadcrumb {
+  margin: 20px 0;
+}
+
+.breadcrumb>li+li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: ">";
+}
+
+.breadcrumb .glyphicon-home:before
+{
+  padding-right: 5px;
 }
