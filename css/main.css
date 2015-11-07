@@ -44,6 +44,28 @@ a
   border-bottom: 1px solid rgb(209, 209, 209);
 }
 
+.pagination>li>a, 
+.pagination>li>span {
+    color: #46a546;
+}
+
+.label-default {
+    background-color: #46a546;
+}
+
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #46a546;
+    border-color: #46a546;
+}
+
 .navbar-default .navbar-nav>li>a:focus, 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>.open>a, 
@@ -239,7 +261,8 @@ a
   height: 65px;
 }
 
-.list h3
+.content h3,
+.content article h3
 {
   display: inline-block;
   border-bottom: 1px solid #e8e8e8;
