@@ -1,20 +1,30 @@
 
-body{
-  font: "Microsoft Yahei",Arial,Verdana,Tahoma,Sans-Serif;
+body
+{
+  font: "微软雅黑",Arial,Verdana,Tahoma,Sans-Serif;
   padding-top: 50px;
 }
 
-a {
+*
+{
+  margin: 0 0;
+  padding: 0 0;
+}
+
+a 
+{
   color: #606060;
   outline: 0;
   text-decoration: none;
 }
 
-.carousel {
+.carousel 
+{
   margin-bottom: 30px;
 }
 
-.carousel img {
+.carousel img 
+{
   max-height: 400px;
   min-height: 200px;
   min-width: 100%;
@@ -55,7 +65,8 @@ a {
   background: #46a546;
 }
 
-.panel h3 {
+.panel h3,
+.sidebar ul li h3{
     padding: 0 14px;
     line-height: 35px;
     font-size: 16px;
@@ -67,26 +78,55 @@ a {
     margin: 0 auto;
 }
 
-.panel ul {
+.panel ul,
+.sidebar ul li ul
+{
     margin: 0 auto;
     padding: 14px 14px;
     border: 1px solid #e8e8e8;
     list-style: none;
     overflow: hidden;
     width: 100%;
-  }
-
-.panel ul li{
-    padding: 5px 0;
 }
 
-.panel li span{
+.sidebar ul
+{
+  padding: 14px 0;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sidebar ul li:first-child
+{
+  margin: 0 0;
+}
+
+.sidebar ul li
+{
+  margin: 20px 0;
+}
+
+.panel ul li,
+.sidebar ul li ul li
+{
+    margin: 5px 0;
+}
+
+.panel h3 span a:after,
+.sidebar ul li span a:after
+{
+  float:right;
+  color: #777;
+  font-size: small;
+  content: "更多>>";
+}
+
+.panel li span
+{
   float:right; 
   color: #777;
-}
-
-.panel h3 span{
-  float:right;
 }
 
 .footer {
@@ -193,3 +233,17 @@ a {
 {
   padding-right: 5px;
 }
+
+.media-left img 
+{
+  height: 65px;
+}
+
+.list h3
+{
+  display: inline-block;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
