@@ -265,8 +265,22 @@ a
 .content article h3
 {
   display: inline-block;
-  border-bottom: 1px solid #e8e8e8;
   margin-bottom: 20px;
   width: 100%;
 }
 
+.subtitle
+{
+  display: block;
+  color:#777;
+}
+
+/*.content article p
+{
+  text-indent:2em;
+}*/
+
+.tab-content
+{
+  margin: 20px 0;
+}
