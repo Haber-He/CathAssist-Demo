@@ -1,7 +1,8 @@
 
 body
 {
-  font: "微软雅黑",Arial,Verdana,Tahoma,Sans-Serif;
+  font: 14px/1.4 Georgia,Serif;
+  font-family: 微软雅黑,Arial,Helvetica,sans-serif;
   padding-top: 50px;
 }
 
@@ -78,6 +79,11 @@ a
   background: #46a546;
 }
 
+.dropdown-menu>li>a 
+{
+  padding: 10px 20px;
+}
+
 .dropdown-menu>li>a:focus, 
 .dropdown-menu>li>a:hover,
 .dropdown-menu>.active>a, 
@@ -91,7 +97,8 @@ a
 .sidebar ul li h3{
     padding: 0 14px;
     line-height: 35px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: normal;
     border-top: 2px solid #46a546;
     border-left: 1px solid #e8e8e8;
     border-right: 1px solid #e8e8e8;
@@ -133,7 +140,7 @@ a
 .panel ul li,
 .sidebar ul li ul li
 {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .panel h3 span a:after,
