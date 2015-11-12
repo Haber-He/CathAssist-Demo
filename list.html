@@ -9,6 +9,11 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!--[if IE 7]>
+      <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -110,8 +115,8 @@
         <div class="row">
 
           <div class="col-xs-12 col-md-8">
-            <div class="content">
-                <h3><span class="caret"></span>普世教会</h3>
+            <div class="main-content">
+                <h3 class="title"><i class="icon-list"></i>普世教会</h3>
                 <ul class="media-list">
                   <li class="media">
                     <div class="media-left">
@@ -120,8 +125,8 @@
                       </a>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="article.html">教宗清晨弥撒：贪恋钱财的神父和主教使我感到难过</a></h4>
-                      <span class="hidden-xs">
+                      <span class="media-heading"><a href="article.html">教宗清晨弥撒：贪恋钱财的神父和主教使我感到难过</a></span>
+                      <span class="media-summary hidden-xs">
                       教宗方济各11月6日在圣玛尔大之家的清晨弥撒中表示，主教和司铎要克胜“双重生活”的诱惑，教会蒙召做仆役，而非“生意人”。教宗还告诫道，要警惕“贪恋钱财的趋炎附势者”，因为他们对教会的危害极大。
                       </span>
                       <span class="visible-xs-block"></span>
@@ -134,8 +139,8 @@
                       </a>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="#">圣座祝贺印度教屠妖节：携手促进人类生态学</a></h4>
-                      <span class="hidden-xs">
+                      <span class="media-heading"><a href="#">圣座祝贺印度教屠妖节：携手促进人类生态学</a></span>
+                      <span class="media-summary hidden-xs">
                       印度教将於11月11日庆祝屠妖节，这个节日象徵光明战胜黑暗，善战胜恶。圣座宗教交谈委员会主席托朗枢机11月6日向全世界印度教徒发表贺函，邀请他们一同缔造一个「促进人类生态学的文化」。
                       </span>
                     </div>
@@ -147,8 +152,8 @@
                       </a>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="#">教宗方济各：慈善撒玛黎雅人扞卫胎儿、年长者和穷人的生命</a></h4>
-                      <span class="hidden-xs">
+                      <span class="media-heading"><a href="#">教宗方济各：慈善撒玛黎雅人扞卫胎儿、年长者和穷人的生命</a></span>
+                      <span class="media-summary hidden-xs">
                       教宗方济各11月6日中午在梵蒂冈接见了援助生命中心的代表团。援助生命中心是意大利促进生命运动所成立的机构，教宗向他们强调，扞卫人的生命和促进家庭始终是基督徒社会工作的重点。当各种不利的社会条件剥夺人的尊严时，基督徒必须给这些人提供团结支持。
                       </span>
                     </div>
@@ -160,8 +165,8 @@
                       </a>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="#">教宗接受访谈：教会帮助穷人，信徒不可度法朗式的生活</a></h4>
-                      <span class="hidden-xs">                      
+                      <span class="media-heading"><a href="#">教宗接受访谈：教会帮助穷人，信徒不可度法朗式的生活</a></span>
+                      <span class="media-summary hidden-xs">                     
                       教宗方济各11月5日在梵蒂冈圣玛尔大之家接受荷兰乌得勒支无家可归者报刊《马路新闻》（Straatnieuws）日报采访。访谈紧扣时事，涉及贪污、帮助穷人等议题。该报编辑称教宗平和友善，精力充沛，思路明确。
                       </span>
                     </div>
@@ -173,8 +178,8 @@
                       </a>
                     </div>
                     <div class="media-body">
-                      <h4 class="media-heading"><a href="#">教宗清晨弥撒：基督徒包容人，不把任何人拒之门外</a></h4>
-                      <span class="hidden-xs">
+                      <span class="media-heading"><a href="#">教宗清晨弥撒：基督徒包容人，不把任何人拒之门外</a></span>
+                      <span class="media-summary hidden-xs">
                       教宗方济各11月5日在圣玛尔大之家的清晨弥撒讲道中强调，基督徒包容人，不把任何人拒之门外，即使这人造成阻力。排斥别人，自以为优秀，便会导致冲突和分裂，总有一天会站在天主的审判台，得向天主交账。
                       </span>
                     </div>
@@ -301,48 +306,72 @@
 
     <hr class="featurette-divider">
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <!-- footer -->
+    <footer class="main-footer">
       <div class="container">
         <div class="row">
+          
           <div class="col-xs-12 col-md-4">
-            <h4>关于我们</h4>
-            <p>我们和您一样是一群热爱教会事业的青年人，创建这个平台就是致力于提供天主教会内一个更完善的青年人之间互相学习、沟通的平台。<a>更多</a></p>
+            <div class="widget">
+              <h4 class="title">关于我们</h4>
+              <div class="content">
+                <p>我们和您一样是一群热爱教会事业的青年人，创建这个平台就是致力于提供天主教会内一个更完善的青年人之间互相学习、沟通的平台。<a>更多</a></p>
+              </div>
+            </div>
           </div>
-          <div class="col-xs-4 col-md-2">
-            <h4>应用下载</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">圣经小助手</a></li>
-              <li><a href="#">日课小助手</a></li>
-              <li><a href="#">电台小助手</a></li>
-              <li><a href="#">天主教小助手</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-4 col-md-2">
-            <h4>关注我们</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">淘宝网店</a></li>
-              <li><a href="#">新浪微博</a></li>
-              <li><a href="#">腾讯微博</a></li>
-              <li><a href="#">捐助我们</a></li>
-            </ul>
+          <div class="col-xs-6 col-md-2">
+            <div class="widget">
+              <h4 class="title">应用下载</h4>
+              <div class="content">
+                <ul>
+                  <li><a href="#">圣经小助手</a></li>
+                  <li><a href="#">日课小助手</a></li>
+                  <li><a href="#">电台小助手</a></li>
+                  <li><a href="#">天主教小助手</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="col-xs-4 col-md-2">
-            <h4>联系我们</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">淘宝网店</a></li>
-              <li><a href="#">新浪微博</a></li>
-              <li><a href="#">腾讯微博</a></li>
-              <li><a href="#">捐助我们</a></li>
-            </ul>
+          <div class="col-xs-6 col-md-2">
+            <div class="widget">
+              <h4 class="title">关注我们</h4>
+              <div class="content">
+                <ul>
+                  <li><a href="#">淘宝网店</a></li>
+                  <li><a href="#">新浪微博</a></li>
+                  <li><a href="#">腾讯微博</a></li>
+                  <li><a href="#">捐助我们</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-xs-12 col-md-2" style="text-align: center">
-            <h4>微信公众号</h4>
-            <img src="img/qrcode.jpg" class="qrcode" alt="微信扫一扫"/>
+
+          <div class="col-xs-6 col-md-2">
+            <div class="widget">
+              <h4 class="title">联系我们</h4>
+              <div class="content">
+                <ul>
+                  <li><a href="#">淘宝网店</a></li>
+                  <li><a href="#">新浪微博</a></li>
+                  <li><a href="#">腾讯微博</a></li>
+                  <li><a href="#">捐助我们</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
+
+          <div class="col-xs-6 col-md-2">
+            <div class="widget">
+              <h4 class="title">微信公众号</h4>
+              <div class="content">
+                <img src="img/qrcode.jpg" class="qrcode" alt="微信扫一扫"/>
+              </div>
+            </div>
+          </div>
+
         </div>
+
         <div class="row">
           <div class="col-xs-12">
             <p class="w3-link">Copyright © 2015 Catholic Assist. All Rights Reserved. </p>
