@@ -33,11 +33,6 @@ a:hover
   color: #46a546;
 }
 
-.carousel 
-{
-  margin-bottom: 30px;
-}
-
 .carousel img 
 {
   max-height: 400px;
@@ -190,23 +185,21 @@ a:hover
   color: #959595;
 }
 
-.main-footer .row{
-  margin-top: 50px;
-}
-
 .main-footer .widget .title {
   color: #ffffff;
   border-bottom: 1px solid #303030;
 }
 
-.row,
+.main-panel,
+.sidebar ul li,
+.widget,
 .component {
   margin-bottom: 35px; 
 }
 
 .widget .title {
   margin-top: 0;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ebebeb;
   position: relative;
 }
@@ -298,10 +291,6 @@ a:hover
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-}
-
-.common-link {
-  margin-bottom: 35px;
 }
 
 .common-link .title {
@@ -406,6 +395,7 @@ a:hover
 .btn {
   padding: 7px 14px;
   border-radius: 2px;
+  white-space: nowrap;
 }
 
 .btn-default {
