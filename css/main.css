@@ -40,10 +40,6 @@ a:hover
   min-width: 100%;
 }
 
-.carousel .item {
-  background-color: #777;
-}
-
 /*.content h2{
   font-weight:700;
   line-height: 1.5em;
@@ -56,11 +52,11 @@ a:hover
 
 .pagination>li>a, 
 .pagination>li>span {
-    color: #46a546;
+  color: #46a546;
 }
 
 .label-default {
-    background-color: #46a546;
+  background-color: #46a546;
 }
 
 .pagination>.active>a, 
@@ -115,7 +111,6 @@ a:hover
 .main-panel,
 .sidebar ul li{
   border: 0;
-  background-color: #fff;
 }
 
 .main-panel h3,
@@ -332,6 +327,15 @@ a:hover
   margin: 20px 0;
 }
 
+/*component background color*/
+.carousel .item,
+.main-content,
+.main-panel,
+.sidebar ul li,
+.breadcrumb {
+  background-color: #FFF;
+}
+
 .breadcrumb>.active {
   color: #7B7B7B;
 }
@@ -349,7 +353,6 @@ a:hover
 
 .main-content {
   padding: 20px;
-  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
