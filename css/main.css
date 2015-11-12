@@ -199,7 +199,7 @@ a:hover
   border-bottom: 1px solid #303030;
 }
 
-.row
+.row,
 .component {
   margin-bottom: 35px; 
 }
@@ -219,7 +219,9 @@ a:hover
   color: #959595;
 }
 
-.widget>.title:after {
+.main-content .title:after,
+.common-link .title:after,
+.widget .title:after {
   content: "";
   width: 90px;
   height: 1px;
