@@ -402,3 +402,17 @@ a:hover
 {
   margin: 20px 0;
 }
+
+.btn {
+  padding: 7px 14px;
+  border-radius: 2px;
+}
+
+.btn-default {
+  border: 1px solid #46a546;
+  background: #46a546;
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
