@@ -18,7 +18,7 @@ body
 
 a 
 {
-  color: #606060;
+  color: #3C3C3C;
   outline: 0;
   text-decoration: none;
 }
@@ -113,7 +113,6 @@ a:hover
   border: 0;
 }
 
-.main-panel h3,
 .sidebar ul li h3{
     padding: 0 14px;
     font-size: 18px;
@@ -127,6 +126,7 @@ a:hover
     line-height: 35px;
 }
 
+.main-pic ul,
 .main-panel ul,
 .sidebar ul li ul
 {
@@ -147,25 +147,29 @@ a:hover
   width: 100%;
 }
 
-.sidebar ul li ul
+.sidebar>ul>li>ul
 {
   margin-bottom: 20px;
 }
 
-.main-panel ul li,
-.sidebar ul li ul li
+.main-panel>ul>li,
+.sidebar>ul>li>ul>li
 {
   margin: 10px 0;
   border-bottom: 1px dashed #BEBEBE;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
-.main-panel h3 span a:after,
-.sidebar ul li span a:after
+.main-panel>.title>a:after,
+.sidebar>ul>li>h3>a:after
 {
   float:right;
   color: #7B7B7B;
   font-size: small;
   content: "更多>>";
+  bottom: 0;
 }
 
 .main-panel li span
@@ -185,6 +189,7 @@ a:hover
   border-bottom: 1px solid #303030;
 }
 
+.main-pic,
 .main-panel,
 .sidebar ul li,
 .widget,
@@ -207,6 +212,7 @@ a:hover
   color: #959595;
 }
 
+.row .title:after,
 .main-content .title:after,
 .common-link .title:after,
 .widget .title:after {
@@ -267,7 +273,7 @@ a:hover
     -webkit-background-clip: padding-box;
     -moz-border-radius: 5px;
     -moz-background-clip: padding;
-    border-radius: 5px;
+/*    border-radius: 5px;*/
     background-clip: padding-box;
     /*-webkit-box-shadow: 0 0 3px #999;*/
     /*-moz-box-shadow: 0 0 3px #999;*/
@@ -288,6 +294,7 @@ a:hover
   text-overflow: ellipsis;
 }
 
+.row .title,
 .common-link .title {
   margin-top: 0;
   padding-bottom: 7px;
@@ -299,7 +306,7 @@ a:hover
 .common-link ul li{
   list-style: none;
   float: left;
-  margin-right: 5px;
+  margin: 0 5px;
 }
 
 .tag-list ul li a:hover,
@@ -330,8 +337,10 @@ a:hover
 /*component background color*/
 .carousel .item,
 .main-content,
-.main-panel,
+.main-pic,
+.main-panel>.content,
 .sidebar ul li,
+.main-pic,
 .breadcrumb {
   background-color: #FFF;
 }
@@ -408,4 +417,20 @@ a:hover
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.main-pic ul {
+  text-align: center
+}
+
+.main-pic ul li {
+  margin: 0px auto 0px auto;
+  width: 230px;
+  padding: 5px 5px;
+  display:inline-block;
+}
+
+.main-pic ul li a img{
+  max-width: 100%;
+  height: auto;
 }
