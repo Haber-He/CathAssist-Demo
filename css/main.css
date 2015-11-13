@@ -178,6 +178,10 @@ a:hover
   color: #7B7B7B;
 }
 
+.main-panel>.content>li>i {
+  margin-right: 5px;
+}
+
 .main-footer {
   background: #202020;
   padding: 35px 0 0;
