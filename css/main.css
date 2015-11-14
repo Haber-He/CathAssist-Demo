@@ -33,13 +33,6 @@ a:hover
   color: #46a546;
 }
 
-.carousel img 
-{
-  max-height: 500px;
-  min-height: 200px;
-  min-width: 100%;
-}
-
 /*.content h2{
   font-weight:700;
   line-height: 1.5em;
@@ -230,7 +223,8 @@ a:hover
 }
 
 .widget .content .qrcode{
-  height: 150px;
+  max-height: 150px;
+  max-width: 100%;
 }
 
 .sns .qq {
