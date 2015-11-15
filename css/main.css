@@ -119,7 +119,6 @@ a:hover
     line-height: 35px;
 }
 
-.main-pic ul,
 .main-panel ul,
 .sidebar ul li ul
 {
@@ -155,6 +154,7 @@ a:hover
   white-space:nowrap;
 }
 
+.main-pic>.title>a:after,
 .main-panel>.title>a:after,
 .sidebar>ul>li>h3>a:after
 {
@@ -191,7 +191,7 @@ a:hover
 .sidebar ul li,
 .widget,
 .component {
-  margin-bottom: 35px; 
+  margin-bottom: 30px; 
 }
 
 .widget .title {
@@ -335,10 +335,9 @@ a:hover
 /*component background color*/
 .carousel .item,
 .main-content,
-.main-pic,
+.main-pic>.content,
 .main-panel>.content,
 .sidebar ul li,
-.main-pic,
 .breadcrumb {
   background-color: #FFF;
 }
@@ -417,18 +416,8 @@ a:hover
   transition: all 0.2s ease-in-out;
 }
 
-.main-pic ul {
-  text-align: center
-}
-
-.main-pic ul li {
-  margin: 0px auto 0px auto;
-  width: 230px;
-  padding: 5px 5px;
-  display:inline-block;
-}
-
-.main-pic ul li a img{
-  max-width: 100%;
-  height: auto;
+.main-pic div{
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
 }

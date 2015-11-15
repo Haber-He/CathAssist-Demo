@@ -191,7 +191,7 @@
   transition-duration: 1.5s;
 }
 #sequence .animate-in .title {
-  left: 15%;
+  left: 10%;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
@@ -222,7 +222,7 @@
   top: 40%;
 }
 .animate-in .subtitle {
-  left: 15%;
+  left: 10%;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
