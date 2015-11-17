@@ -5,9 +5,6 @@
 
 .carousel .carousel-inner 
 {
-  max-height: 400px;
-  min-height: 200px;
-  min-width: 100%;
   margin-top: 20px;
   margin-bottom:20px;
 }
@@ -15,8 +12,8 @@
 #index-slider {
   background-image: url(../img/extend/slider-hope.jpg);
   filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
-  -moz-background-size:100% 100%;  
-  background-size:100% 100%;  
+  -moz-background-size:100% 100%; 
+  background-size:100% 100%;
 }
 
 /*#index-slider>.carousel-inner .item */
@@ -30,15 +27,21 @@
 .slider-pic img{
   max-height: 300px;
   max-width: 100%;
+  min-height: 100px;
   margin: 0 auto;
 }
 
-/*@media (min-width: 768px) { */
-    .vertical-align {
-        display: flex;
-        align-items: center;
-    }
-/*}*/
+.vertical-align {
+/*  display: flex;
+  flex-direction: row;*/
+}
+
+.vertical-align [class^="col-"],
+.vertical-align [class*="col-"] {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
 
 .slider-caption .title,
 .slider-caption .subtitle
@@ -59,6 +62,15 @@
   padding: 10px;
 }
 
-.carousel .item {
-  background-color: #777;
+.img-shadow {
+    border:5px solid #FFF;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -moz-box-shadow: 2px 4px 6px #ADADAD;
+    -webkit-box-shadow: 2px 4px 6px #ADADAD;
+    box-shadow: 2px 4px 6px #ADADAD;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#FFF)";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#FFF');
 }
