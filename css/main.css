@@ -111,8 +111,8 @@ a:hover
     font-size: 18px;
     font-weight: normal;
     border-top: 2px solid #46a546;
-    border-left: 1px solid #e8e8e8;
-    border-right: 1px solid #e8e8e8;
+/*    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;*/
     color: #333;
     background: #f2f2f2;
     margin: 0 auto;
@@ -124,7 +124,7 @@ a:hover
 {
     margin: 0 auto;
     padding: 10px 14px;
-    border: 1px solid #e8e8e8;
+    /*border: 1px solid #e8e8e8;*/
     list-style: none;
     overflow: hidden;
     width: 100%;
@@ -209,7 +209,7 @@ a:hover
   color: #959595;
 }
 
-.main-pic .title,
+.main-pic>.title,
 .main-panel .title,
 .main-content .title,
 .common-link .title {
@@ -423,3 +423,11 @@ a:hover
   padding-left: 5px;
   margin-bottom: 10px;
 }
+
+.main-pic>.content .pic-title{
+  font-size: 16px;
+  margin-bottom: -20px;
+
+}
+
+legend { margin:3px; text-align:center;width:100%}
