@@ -209,7 +209,18 @@ a:hover
   color: #959595;
 }
 
-.row .title:after,
+.main-pic .title,
+.main-panel .title,
+.main-content .title,
+.common-link .title {
+  margin-top: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #BEBEBE;
+  position: relative;
+}
+
+.main-pic .title:after,
+.main-panel .title:after,
 .main-content .title:after,
 .common-link .title:after,
 .widget .title:after {
@@ -292,14 +303,6 @@ a:hover
   text-overflow: ellipsis;
 }
 
-.row .title,
-.common-link .title {
-  margin-top: 0;
-  padding-bottom: 7px;
-  border-bottom: 1px solid #BEBEBE;
-  position: relative;
-}
-
 .tag-list ul li,
 .common-link ul li{
   list-style: none;
@@ -333,7 +336,6 @@ a:hover
 }
 
 /*component background color*/
-.carousel .item,
 .main-content,
 .main-pic>.content,
 .main-panel>.content,

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <base target="_blank" />
     <title>首页 - Catholic Assist</title>
 
     <!-- Bootstrap -->
@@ -15,7 +16,7 @@
     <![endif]-->
     
     <link rel="stylesheet" type="text/css" href="css/lightbox.css">
-    <link rel="stylesheet" type="text/css" href="css/sequence.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -100,34 +101,72 @@
     </nav>
 
     <!-- Homepage Slider -->
-    <div class="homepage-slider">
-      <div id="sequence">
-        <ul class="sequence-canvas">
-          <li>
-            <h2 class="title">教宗清晨弥撒：贪恋钱财的神父和主教使我感到难过</h2>
-            <h3 class="subtitle">教宗方济各11月6日在圣玛尔大之家的清晨弥撒中表示，主教和司铎要克胜“双重生活”的诱惑，教会蒙召做仆役，而非“生意人”。教宗还告诫道，要警惕“贪恋钱财的趋炎附势者”，因为他们对教会的危害极大。</h3>
-            <img class="slide-img img-responsive" src="img/extend/OSSROM86646_Articolo.jpg" alt="Slide 1" />
-          </li>
-          <li>
-            <h2 class="title">圣座祝贺印度教屠妖节：携手促进人类生态学</h2>
-            <h3 class="subtitle">印度教将於11月11日庆祝屠妖节，这个节日象徵光明战胜黑暗，善战胜恶。圣座宗教交谈委员会主席托朗枢机11月6日向全世界印度教徒发表贺函，邀请他们一同缔造一个「促进人类生态学的文化」。</h3>
-            <img class="slide-img img-responsive" src="img/extend/EPA1548510_Articolo.jpg" alt="Slide 2" />
-          </li>
-          <li>
-            <h2 class="title">教宗方济各：慈善撒玛黎雅人扞卫胎儿、年长者和穷人的生命</h2>
-            <h3 class="subtitle">教宗方济各11月6日中午在梵蒂冈接见了援助生命中心的代表团。援助生命中心是意大利促进生命运动所成立的机构，教宗向他们强调，扞卫人的生命和促进家庭始终是基督徒社会工作的重点。当各种不利的社会条件剥夺人的尊严时，基督徒必须给这些人提供团结支持。</h3>
-            <img class="slide-img img-responsive" src="img/extend/OSSROM86711_Articolo.jpg" alt="Slide 3" />
-          </li>
-        </ul>
-        <div class="sequence-pagination-wrapper">
-          <ul class="sequence-pagination">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
+    <section>
+      <div id="index-slider" class="carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#index-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#index-slider" data-slide-to="1" ></li>
+          <li data-target="#index-slider" data-slide-to="2" ></li>
+        </ol>
+        <div class="container">
+          <div class="row vertical-align">
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="slider-caption">
+                    <h3 class="title">关于我们</h3>
+                    <h4 class="subtitle hidden-xs">我们和您一样是一群热爱教会事业的青年人，创建这个平台就是致力于提供天主教会内一个更完善的青年人之间互相学习、沟通的平台。<br>如果你也喜欢我们这个团队，如果你也充满这份热情，如果你愿意奉献自己的时间给主耶稣，那么快来报名参与，和我们一起为兄弟姊妹完善更好的平台吧！</h4>
+                  </div>
+                </div><div class="col-xs-12 col-sm-6">
+                  <div class="slider-pic">
+                    <img class="img-responsive img-shadow" src="img/qrcode.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="slider-caption">
+                    <h3 class="title">教宗清晨弥撒：贪恋钱财的神父和主教使我感到难过</h3>
+                    <h4 class="subtitle hidden-xs">教宗方济各11月6日在圣玛尔大之家的清晨弥撒中表示，主教和司铎要克胜“双重生活”的诱惑，教会蒙召做仆役，而非“生意人”。</h4>
+                  </div>
+                </div><div class="col-xs-12 col-sm-6">
+                  <div class="slider-pic">
+                    <img class="img-responsive img-shadow" src="img/extend/OSSROM86646_Articolo.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="slider-caption">
+                    <h3 class="title">圣座祝贺印度教屠妖节：携手促进人类生态学</h3>
+                    <h4 class="subtitle hidden-xs">印度教将於11月11日庆祝屠妖节，这个节日象徵光明战胜黑暗，善战胜恶。圣座宗教交谈委员会主席托朗枢机11月6日向全世界</h4>
+                  </div>
+                </div><div class="col-xs-12 col-sm-6">
+                  <div class="slider-pic">
+                    <img class="img-responsive img-shadow" src="img/extend/EPA1548510_Articolo.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="slider-caption">
+                    <h3 class="title">教宗方济各：慈善撒玛黎雅人扞卫胎儿、年长者和穷人的生命</h3>
+                    <h4 class="subtitle hidden-xs">教宗方济各11月6日中午在梵蒂冈接见了援助生命中心的代表团。援助生命中心是意大利促进生命运动所成立的机构，教宗向他们</h4>
+                  </div>
+                </div><div class="col-xs-12 col-sm-6">
+                  <div class="slider-pic">
+                    <img class="img-responsive img-shadow" src="img/extend/OSSROM86711_Articolo.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- End Homepage Slider -->
 
     <section>
@@ -170,24 +209,24 @@
                 </h4>
                 <ul class="content">
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">婚姻怎么保鲜，夫妇恳谈会告诉你秘诀</a>
                   </li>
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">孩子为什么会这样？</a>
                   </li>
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">基督信徒人生四十好</a>
                   </li>
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">从圣经看基督徒的饮食</a>
                   </li>
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">特稿：圣母升天节谈女性在教会中的角色和地位</a>
                   </li>
                 </ul>
             </div> 
@@ -200,24 +239,24 @@
                 </h4>
                 <ul class="content">
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">赞美的力量——送给参加高考、中考的孩子们和他们的家长</a>
                   </li>
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">掐住罪恶的源头：骄傲和邪淫</a>
                   </li>
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">影响孩子的主要因素不是学校，而是家庭</a>
                   </li>
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">元宵节来猜圣经谜语吧！(转自天主教中文网)</a>
                   </li>
                   <li>
-                    <a href="#">教宗推文2015年10月27日</a>
-                    <span class="hidden-xs">2015-10-27</span>
+                    <i class="icon-caret-right"></i>
+                    <a href="article.html">将临期的意义</a>
                   </li>
                 </ul>
             </div> 
@@ -367,7 +406,7 @@
             <div class="widget">
               <h4 class="title">关于我们</h4>
               <div class="content">
-                <p>我们和您一样是一群热爱教会事业的青年人，创建这个平台就是致力于提供天主教会内一个更完善的青年人之间互相学习、沟通的平台。<a>更多</a></p>
+                <p>我们和您一样是一群热爱教会事业的青年人，创建这个平台就是致力于提供天主教会内一个更完善的青年人之间互相学习、沟通的平台。如果你也喜欢我们这个团队，如果你也充满这份热情，如果你愿意奉献自己的时间给主耶稣，那么快来报名参与，和我们一起为兄弟姊妹完善更好的平台吧！</p>
               </div>
             </div>
           </div>
@@ -439,28 +478,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-hover-dropdown.min.js"></script>
     <script src="js/lightbox.min.js"></script>
-    <script src="js/jquery.sequence-min.js"></script>
     <script type="text/javascript">
       $(".nav a").on("click", function(){
          $(".nav").find(".active").removeClass("active");
          $(this).parent().addClass("active");
       });
-
-      $(document).ready(function(){
-    
-        //Homepage Slider
-          var options = {
-              nextButton: true,
-              prevButton: true,
-              pagination: true,
-              animateStartingFrameIn: true,
-              autoPlay: true,
-              autoPlayDelay: 3000,
-              preloader: true
-          };
-          
-          var mySequence = $("#sequence").sequence(options).data("sequence");
-        });
     </script>
   </body>
 </html>
