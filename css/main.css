@@ -19,59 +19,6 @@ a
   text-decoration: none;
 }
 
-.slider  
-{
-  margin-bottom: 35px;
-}
-
-.slider .slider-inner 
-{
-  max-height: 400px;
-  min-height: 200px;
-  min-width: 100%;
-}
-
-#index-slider {
-  background-image: url(../img/extend/slider-hope.jpg);
-  filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
-  -moz-background-size:100% 100%;  
-  background-size:100% 100%;  
-}
-
-.slider-inner .item .slider-pic{
-  padding-bottom: 20px;
-}
-
-@media (min-width: 768px) { 
-    .vertical-align {
-        display: flex;
-        align-items: center;
-    }
-}
-
-.slider-caption .title,
-.slider-caption .subtitle
-{
-  color: #FFF;
-  text-shadow: 2px 2px 3px #444;
-  line-height: 1.5em;
-}
-
-.slider-caption{
-  text-transform: none;
-  background: #a1a1a1;
-  background: rgba(0, 0, 0, 0.3);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  padding: 10px;
-}
-
-.carousel .item {
-  background-color: #777;
-}
-
 .content h2{
   font-weight:700;
   line-height: 1.5em;
