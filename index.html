@@ -450,7 +450,7 @@
             <div class="widget">
               <h4 class="title">微信公众号</h4>
               <div class="content">
-                <img src="img/qrcode.jpg" class="qrcode" alt="微信扫一扫"/>
+                <img src="img/qrcode.jpg" class="qrcode img-responsive" alt="微信扫一扫"/>
               </div>
             </div>
           </div>
@@ -466,6 +466,18 @@
     </footer>
 
     </div>
+
+    <div class="elevator">
+<!--         <a class="elevator-weixin" href="javascript:;">
+          <div class="elevator-weixin-box">
+          </div>
+        </a> -->
+        <a class="elevator-msg" href="#"></a>
+        <a class="elevator-app" href="#"></a>
+        <a class="elevator-top" href="javascript:;" style="display:none"></a>
+    </div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -473,10 +485,30 @@
     <script src="js/bootstrap-hover-dropdown.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script type="text/javascript">
+
+    jQuery(document).ready(function() {
+
       $(".nav a").on("click", function(){
          $(".nav").find(".active").removeClass("active");
          $(this).parent().addClass("active");
       });
+
+      var offset = 220;
+      var duration = 850;
+      jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > offset) {
+              jQuery('.elevator-top').fadeIn(duration);
+          } else {
+              jQuery('.elevator-top').fadeOut(duration);
+          }
+      });
+      
+      jQuery('.elevator-top').click(function(event) {
+          event.preventDefault();
+          $(document.body).animate({scrollTop: 0}, duration);
+          return false;
+      });
+    });
     </script>
   </body>
 </html>

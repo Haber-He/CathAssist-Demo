@@ -430,4 +430,88 @@ a:hover
 
 }
 
-legend { margin:3px; text-align:center;width:100%}
+.elevator {
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 1030;
+}
+
+.elevator a {
+  display: block;
+  position: relative;
+  margin: 1px 0;
+  outline: none;
+  height: 52px;
+  width: 52px;
+  -webkit-transition: background-position 0.15s;
+  -moz-transition: background-position 0.15s;
+  transition: background-position 0.15s;
+  background: url(../img/elevator.png?1) no-repeat;
+}
+
+.elevator .elevator-app {
+  background-position: 0 -134px;
+}
+.elevator .elevator-app:hover {
+  background-position: 0 -196px;
+}
+
+.elevator .elevator-weixin-box {
+  position: absolute;
+  /* display: none; */
+  width: 200px;
+  height: 200px;
+  bottom: -10px;
+  right: 52px;
+  -webkit-transition: opacity 0.25s, transform .3s;
+  -moz-transition: opacity 0.25s, transform .3s;
+  transition: opacity 0.25s, transform .3s;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  max-width: 0;
+  -webkit-transform: scale(0.01);
+  -ms-transform: scale(0.01);
+  transform: scale(0.01);
+  -webkit-transform-origin: 100% 95%;
+  -ms-transform-origin: 100% 95%;
+  transform-origin: 100% 95%;
+  background: url(../img/qrcode.jpg) no-repeat 0 0;
+  filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
+  -moz-background-size:100% 100%; 
+  background-size:100% 100%;
+}
+
+.elevator .elevator-weixin {
+  background-position: 0 -444px;
+}
+
+.elevator .elevator-weixin:hover {
+  background-position: 0 -506px;
+}
+
+.elevator .elevator-weixin:hover .elevator-weixin-box {
+  /* max-width: none; */
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  max-width: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.elevator .elevator-msg {
+  background-position: 0 -10px;
+}
+.elevator .elevator-msg:hover {
+  background-position: 0 -72px;
+}
+
+.elevator .elevator-top {
+  background-position: 0 -258px;
+}
+
+.elevator .elevator-top:hover {
+  background-position: 0 -320px;
+}
