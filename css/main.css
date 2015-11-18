@@ -418,16 +418,51 @@ a:hover
   transition: all 0.2s ease-in-out;
 }
 
-.main-pic div{
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-bottom: 10px;
+
+.main-pic .content {
+  text-align:center;
 }
 
-.main-pic>.content .pic-title{
-  font-size: 16px;
-  margin-bottom: -20px;
+.main-pic .content .pic-box {
+    position: relative;
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+    border: none;
+    margin:0 auto;
+    padding:0;
+    height: 250px;
+    overflow: hidden;
+}
 
+.main-pic .content .pic-box img {
+  max-height: 250px;
+  max-width: 100%;
+  min-height: 100px;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-pic .content .pic-box .pic-caption {
+    position:absolute;
+    bottom: 0px;
+    background: #a1a1a1;
+    background: rgba(0, 0, 0, 0.3);
+    /*background:rgba(66, 139, 202, 0.75);*/
+    width:100%;
+    overflow: hidden;
+    padding: 5px !important;
+    /*display: none;*/
+    /*text-align:center;*/
+    color:#fff !important;
+    z-index:2;
+    text-align: left;
+}
+
+.main-pic .content .pic-box .pic-caption a{
+  color: #FFF;
+  font-size: 16px;
 }
 
 .elevator {
