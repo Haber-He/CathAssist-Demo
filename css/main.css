@@ -431,24 +431,45 @@ a:hover
     border: none;
     margin:0 auto;
     padding:0;
-    height: 250px;
     overflow: hidden;
 }
 
-.main-pic .content .pic-box img {
-  max-height: 250px;
-  max-width: 100%;
-  min-height: 100px;
-  min-height: 100%;
+@media (max-width: 768px) { 
+/*  .main-pic .content .pic-box{
+    height: 250px;
+  }*/
+}
+
+@media (min-width: 768px) { 
+  .main-pic .content .pic-box img {
+    max-height: 250px;
+    min-height: 250px;
+  }
+}
+
+@media (min-width: 992px) { 
+  .main-pic .content .pic-box img {
+    max-height: 250px;
+    min-height: 250px;
+  }
+}
+
+.main-pic .content .pic-box img { 
+/*  min-height: 100px;*/
   margin-left: auto;
   margin-right: auto;
+  opacity: 0.75;
+}
+
+.main-pic .content .pic-box img:hover {
+  opacity: 1;
 }
 
 .main-pic .content .pic-box .pic-caption {
     position:absolute;
     bottom: 0px;
     background: #a1a1a1;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     /*background:rgba(66, 139, 202, 0.75);*/
     width:100%;
     overflow: hidden;
