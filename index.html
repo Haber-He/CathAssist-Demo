@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <base target="_blank" />
     <title>首页 - Catholic Assist</title>
@@ -498,7 +498,7 @@
     </div>
 
     <div class="elevator">
-<!--         <a class="elevator-weixin" href="javascript:;">
+        <!-- <a class="elevator-weixin" href="javascript:;">
           <div class="elevator-weixin-box">
           </div>
         </a> -->
@@ -509,36 +509,12 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-hover-dropdown.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 
-    jQuery(document).ready(function() {
-
-      $(".nav a").on("click", function(){
-         $(".nav").find(".active").removeClass("active");
-         $(this).parent().addClass("active");
-      });
-
-      var offset = 220;
-      var duration = 850;
-      jQuery(window).scroll(function() {
-          if (jQuery(this).scrollTop() > offset) {
-              jQuery('.elevator-top').fadeIn(duration);
-          } else {
-              jQuery('.elevator-top').fadeOut(duration);
-          }
-      });
-      
-      jQuery('.elevator-top').click(function(event) {
-          event.preventDefault();
-          $(document.body).animate({scrollTop: 0}, duration);
-          return false;
-      });
-    });
-    </script>
   </body>
 </html>
