@@ -571,3 +571,25 @@ a:hover
 .elevator .elevator-top:hover {
   background-position: 0 -320px;
 }
+
+.main-content ul.list-box li {
+  margin-bottom: 20px;
+  border: 1px solid #46a546;
+  padding: 10px;
+}
+
+.main-content ul.list-box li span {
+  font-size: 12px;
+  color:#7B7B7B;
+}
+
+div.more {
+  text-align: center;
+}
+
+hr.common-divider {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #46a546;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
