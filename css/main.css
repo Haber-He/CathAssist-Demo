@@ -1,4 +1,11 @@
 
+/*
+theme color:#46a546;
+background color:#ebebeb;
+content background color:#ffffff;
+
+*/
+
 body
 {
   font: 14px/1.4 Georgia,Serif;
@@ -574,8 +581,12 @@ a:hover
 
 .main-content ul.list-box li {
   margin-bottom: 20px;
-  border: 1px solid #46a546;
+  border: 1px solid #ebebeb;
   padding: 10px;
+}
+
+.main-content ul.list-box li:hover{
+  border: 1px solid #46a546;
 }
 
 .main-content ul.list-box li span {
