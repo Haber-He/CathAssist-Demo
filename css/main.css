@@ -587,6 +587,7 @@ a:hover
 
 .main-content ul.list-box li:hover{
   border: 1px solid #46a546;
+  background: #F0F0F0;
 }
 
 .main-content ul.list-box li span {
