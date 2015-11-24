@@ -450,6 +450,10 @@ a.btn-tag:hover,
   transition: all 0.2s ease-in-out;
 }
 
+a.btn-default:link,
+a.btn-default:visited {
+  color: #ffffff;
+}
 
 .main-pic .content {
   text-align:center;
