@@ -136,13 +136,13 @@ a:active {
     line-height: 35px;
 }
 
-.main-panel ul.content,
+.main-panel .content,
 .main-panel ul.pic-list,
 .sidebar ul li ul
 {
     margin: 0 auto;
     padding: 10px 10px;
-    /*border: 1px solid #e8e8e8;*/
+    border: 1px solid #e8e8e8;
     list-style: none;
     overflow: hidden;
     width: 100%;
@@ -219,7 +219,6 @@ a:active {
 
 .main-pic,
 .main-panel,
-.main-panel .lesson,
 .main-panel .content,
 .sidebar ul li,
 .widget,
