@@ -10,7 +10,6 @@ body
 {
   font: 14px/1.4 Georgia,Serif;
   font-family: 微软雅黑,Arial,Helvetica,sans-serif;
-  padding-top: 50px;
   color: #505050;
   line-height: 1.75em;
   background: #ebebeb;
@@ -90,6 +89,59 @@ a:active {
   line-height: 36px;
   padding: 0 14px;
   border-radius: 2px;
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+
+div.navbar-logo{
+  float: left;
+}
+
+div.navbar-search-header{
+  float: right!important;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.navbar-img img{
+  max-height: 50px;
+}
+
+@media (max-width: 1200px){
+  
+  a.navbar-img img{
+    max-height: 100px;
+    clear: both;
+    display: block;
+    margin: auto;
+  }
+
+  div.navbar-logo{
+    float: none;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .navbar-collapse.navbar-right{
+    float: left!important;
+  }
+
+  .navbar-collapse {
+    padding-left: 0;
+  }
+}
+
+.navbar-search{
+  display: none;
+}
+
+.navbar-search.in {
+    display: block;
 }
 
 .navbar-default .navbar-nav>li>a:focus, 
