@@ -716,3 +716,10 @@ hr.common-divider {
   padding-left: 0px;
   padding-right: 0px;
 }
+
+.pray-form .form-group label{
+  float: left;
+  text-align: right;
+  width: 70px;
+  margin-right: 5px;
+}
