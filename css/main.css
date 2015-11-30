@@ -407,8 +407,10 @@ a.btn-tag:hover,
   transition: all 0.2s ease;
 }
 
-.breadcrumb {
-  margin: 20px 0;
+@media (max-width: 970px) {
+  .breadcrumb {
+    margin-bottom: 0px;
+  }
 }
 
 .breadcrumb>.active {
