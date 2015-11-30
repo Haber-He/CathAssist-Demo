@@ -14,6 +14,7 @@ body
   line-height: 1.75em;
   background: #ebebeb;
   position: relative;
+  margin-top: 70px;
 }
 
 *
@@ -109,33 +110,14 @@ div.navbar-search-header{
   overflow: hidden;
   cursor: pointer;
 }
-.navbar-img img{
+
+.navbar-brand img{
   max-height: 50px;
+  margin: auto;
 }
 
-@media (max-width: 1200px){
-  
-  a.navbar-img img{
-    max-height: 100px;
-    clear: both;
-    display: block;
-    margin: auto;
-  }
-
-  div.navbar-logo{
-    float: none;
-  }
-
-}
-
-@media (min-width: 768px) and (max-width: 1200px){
-  .navbar-collapse.navbar-right{
-    float: left!important;
-  }
-
-  .navbar-collapse {
-    padding-left: 0;
-  }
+.navbar-brand{
+  padding:0;
 }
 
 .navbar-search{
@@ -591,7 +573,7 @@ blockquote {
 .elevator {
   position: fixed;
   right: 15px;
-  bottom: 10px;
+  bottom: 15px;
   z-index: 1030;
 }
 
