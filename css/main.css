@@ -104,6 +104,9 @@ div.navbar-search-header{
   height: 50px;
   line-height: 50px;
   overflow: hidden;
+}
+
+.icon-search{
   cursor: pointer;
 }
 
@@ -118,10 +121,14 @@ div.navbar-search-header{
 
 .navbar-search{
   display: none;
+  /*position: absolute;*/
+  background: #ffffff;
+  /*padding:10px 15px;*/
+  z-index: 100;
 }
 
 .navbar-search.in {
-    display: block;
+  display: block;
 }
 
 .navbar-default .navbar-nav>li>a:focus, 
@@ -136,7 +143,7 @@ div.navbar-search-header{
   background: #46a546;
 }
 
-.dropdown-menu>li>a 
+.dropdown-menu>li>a
 {
   padding: 10px 20px;
 }
@@ -589,10 +596,15 @@ blockquote {
   outline: none;
   height: 52px;
   width: 52px;
-  -webkit-transition: background-position 0.15s;
+/*  -webkit-transition: background-position 0.15s;
   -moz-transition: background-position 0.15s;
-  transition: background-position 0.15s;
+  transition: background-position 0.15s;*/
   background: url(../img/elevator.png?1) no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .elevator .elevator-app {
