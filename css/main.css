@@ -175,16 +175,20 @@ div.navbar-search-header{
     line-height: 35px;
 }
 
+.main-panel ul.pic-list{
+  text-align:center;
+}
+
 .main-panel .content,
 .main-panel ul.pic-list,
 .sidebar ul li ul
 {
-    margin: 0 auto;
-    padding: 10px 10px;
-    border: 1px solid #e7e7e7;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
+  margin: 0 auto;
+  padding: 10px 10px;
+  border: 1px solid #e7e7e7;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
 }
 
 .sidebar ul
