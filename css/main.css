@@ -767,15 +767,14 @@ div.navbar-logo img{
 
 .topbar-date,
 .topbar-social{
-  height: 24px;
-  line-height: 24px;
+
   position: relative;
   z-index: 9999;
 }
 
-.topbar span a{
+.topbar a{
   height: 24px;
-  display: inline-block;
+  line-height: 24px;
 }
 
 .topbar-social {
@@ -785,7 +784,6 @@ div.navbar-logo img{
 .topbar-social>a {
   margin-left: 4px;
   width: 24px;
-  height: 24px;
   text-indent: -9999px;
   display: inline-block;
   background: url(../img/icon-sns.gif) no-repeat 0 0;
