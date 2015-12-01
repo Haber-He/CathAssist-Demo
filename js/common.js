@@ -60,6 +60,7 @@
 
     jQuery(document).ready(function() {
 
+      /**--start, back to top */
       var offset = 220;
       var duration = 850;
       jQuery(window).scroll(function() {
@@ -74,5 +75,15 @@
           event.preventDefault();
           $(document.body).animate({scrollTop: 0}, duration);
           return false;
+      });
+
+      /**--end, back to top */
+
+      jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > 50) {
+              jQuery('.navbar').addClass("navbar-fixed-top");
+          } else {
+              jQuery('.navbar').removeClass("navbar-fixed-top");
+          }
       });
     });
