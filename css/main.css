@@ -758,19 +758,27 @@ div.navbar-logo img{
   background: #ebebeb;
   height: 40px;
   padding: 5px 0;
-  line-height: 30px;
 }
 
-.social {
-  float: right;
+.topbar-date{
+  float: left!important;
+}
+
+.topbar-date,
+.topbar-social{
+  height: 24px;
+  line-height: 24px;
   margin: 3px 0;
   position: relative;
   z-index: 9999;
-  _max-width: 120px;
+  line-height: 24px;
 }
 
-.social a {
-  float: right;
+.topbar-social {
+  float: right!important;
+}
+
+.topbar-social>a {
   margin-left: 4px;
   width: 24px;
   height: 24px;
@@ -783,26 +791,26 @@ div.navbar-logo img{
   opacity: 0.6;
 }
 
-.social a.s_tsina{
+.topbar-social a.s_tsina{
   background-position: 0 0;
 }
 
-.social a.s_weixin{
+.topbar-social a.s_weixin{
   background-position: 0 -62px;
 }
 
-.social a.s_facebook{
+.topbar-social a.s_facebook{
   background-position: 0 -154px;
 }
 
-.social a.s_tqq{
+.topbar-social a.s_tqq{
   background-position: 0 -31px;
 }
 
-.social a.s_twitter{
+.topbar-social a.s_twitter{
   background-position: 0 -185px;
 }
 
-.social a.s_taobao{
+.topbar-social a.s_taobao{
   background-position: 0 -216px;
 }
