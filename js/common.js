@@ -80,7 +80,7 @@
       /**--end, back to top */
 
       jQuery(window).scroll(function() {
-          if (jQuery(this).scrollTop() > 50) {
+          if (jQuery(this).scrollTop() >= 50) {
               jQuery('.navbar').addClass("navbar-fixed-top");
           } else {
               jQuery('.navbar').removeClass("navbar-fixed-top");
