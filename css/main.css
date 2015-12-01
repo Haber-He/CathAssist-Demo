@@ -755,15 +755,15 @@ div.navbar-logo img{
 }
 
 .topbar{
-  padding: 5px 0;
   background: #ebebeb;
   height: 40px;
+  padding: 5px 0;
   line-height: 30px;
 }
 
 .social {
   float: right;
-  margin-top: 4px;
+  margin: 3px 0;
   position: relative;
   z-index: 9999;
   _max-width: 120px;
