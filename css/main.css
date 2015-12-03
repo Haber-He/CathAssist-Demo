@@ -545,11 +545,11 @@ a.btn-default:visited {
 /*  min-height: 100px;*/
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .main-pic .content .pic-box img:hover {
-  opacity: 1;
+  opacity: 0.75;
 }
 
 .main-panel ul.pic-list .pic-caption,
